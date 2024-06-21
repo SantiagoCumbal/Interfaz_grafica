@@ -16,13 +16,10 @@ public class Inicio {
         btnOK.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                String usuario = nombre.getText();
+                String password = contraseña.getText();
+                if (usuario=="Santiago"){
 
-                if (nombre.getText()=="Santiago"){
-                    if (contraseña.getText()==""){
-                        Advertencia.setText("Ingreso correctamente");
-                    } else{
-                        Advertencia.setText("Credenciales Incorrectas");
-                    }
                 }else{
                     Advertencia.setText("Credenciales Incorrectas");
                 }
